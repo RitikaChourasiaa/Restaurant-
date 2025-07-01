@@ -1,0 +1,378 @@
+/* CSS RESET */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* CSS Variable */
+:root{
+    --navber-height: 59px;
+}
+/* Navigation Bar  */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+#navbar::before{
+    content: "";
+    background-color: #000;
+    position: absolute;
+    top: 0px;
+    left:0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+/*Navigation Bar: Logo And Image */
+#logo{
+    margin: 4px 45px;
+}
+#logo img{
+    height: 59px;
+    margin: 3px 7px;
+    border-radius: 50px;
+    border: 3px solid #000 ;
+}
+#logo img:hover{
+    border: 3px solid #f1742c ;
+}
+/*Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.2rem;
+}
+#navbar ul li:hover{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: #fff;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: #000;
+    background-color: #fff;
+}
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 184px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)),url('../images/background/ed505c156083437.6360f50594df7.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 642px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.90;
+}
+#home h1{
+    color: #fff;
+    text-align: center;
+}
+#home p{
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+}
+/* Services Section */
+#services{
+    margin: 34px;
+    display: flex;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    scroll-behavior: smooth;
+    gap: 20px;
+    scrollbar-width: none; /* for Firefox */
+    overflow-x: auto;
+}
+#secrives-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 20px;
+}
+.menu-slider {
+    position: relative;
+    overflow: hidden;
+    padding: 30px 65px;
+    margin: 10px 0px;
+}
+#service .box{
+     transition: transform 0.3s ease;
+}
+.thought h2{
+    font-size: 1.9rem;
+}
+.slider-btn {
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    padding: 0 10px;
+    z-index: 10;
+}
+
+.slider-btn i {
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid black ;
+    transition: background 0.3s;
+}
+
+.slider-btn i:hover {
+    background-color: #ddd;
+}
+/* About section */
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97px;
+    margin: 20px 50px;
+    padding: 20px 30px;
+    background-color: #dbb5b5;
+    border:  5px solid #ff90a3;
+}
+
+#textt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 100px;
+}
+#textt h2{
+    font-size: 2.4rem;
+    padding: 10px 20px;
+}
+#text{
+    display: inline;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #b9004b;
+}
+/* food item section */
+#food{
+    padding: 30px 65px;
+    margin: 0px 10px;
+}
+#food h2{
+    padding: 7px 20px;
+}
+.food-container{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0px;
+}
+.food-item img{
+    border-radius: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    width: 250px;
+    height: 169px;
+}
+.food-item p{
+    color: #645c5c;
+    padding: 0px 8px;
+
+}
+h3.h-third {
+    padding: 5px 7px;
+}
+.rating-delivery-time{
+    display: flex;
+}
+.rating-star {
+    padding: 0px 5px;
+}
+i#rating-star {
+    padding: 6px 5px;
+    background: #256c25;
+    border-radius: 50px;
+    font-size: 14px;
+    margin: 0px 4px;
+    color: #fff;
+}
+.timing-info i{
+    font-size: 6px;
+}
+/* payment-section */
+.payment{
+    padding: 100px 150px;
+}
+#paytm-container{
+    border: 5px solid pink;
+    border-radius: 10px;
+    width: 100%;
+    height: 350px;
+    background:linear-gradient(180deg, #FFFFFF 0%, #FFEDEF 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#paytm-line{
+    padding: 0px 50px;
+}
+#paytm-line p{
+    font-size: 25px;
+    padding: 0px 12px;
+}
+#paytm-QR img{
+    width: 250px;
+    padding: 0px 15px;
+    position: relative;
+    transform: translateX(-50%);
+    animation: moveUp 3s ease-in-out forwards;
+
+}
+    @keyframes moveUp {
+      from {
+        bottom: 10px;
+        opacity: 0;
+      }
+      to {
+        bottom: 0px;
+        opacity: 1;
+      }
+    }
+
+/* delivery Section */
+section#delivery {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    height: 500px;
+}
+.deliveryImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 300px;
+}
+.deliveryImg IMG{
+    height: 280px;
+}
+.deliveryText{
+    font-size: 1.4rem;
+    padding: 35px 20px;
+    font-style: italic;
+}
+/* contact section */
+.contact {
+  padding: 10px 50px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+.contact-heading h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.contact input,
+.contact textarea {
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 100%;
+}
+
+.contact textarea {
+  resize: vertical;
+}
+
+.contact button {
+  padding: 10px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact button:hover {
+  background-color: #218838;
+}
+
+footer{
+    background-color: #000;
+    color: #fff;
+    padding: 9px 20px;
+    font-size: 1.2rem;
+}
+
+/* Utility Classes */
+
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: "Roboto", sans-serif;
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: red;
+    margin: 17px;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn:hover{
+    padding: 6px 20px;
+    border: 3px solid #000;
+    background-color: rgb(230, 142, 142);
+    margin: 17px;
+    color: #000;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+hr {
+    margin: 0px 65px;
+}
+.center{
+    text-align: center;
+}
